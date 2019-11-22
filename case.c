@@ -8,8 +8,8 @@
 //return an array
 int *getArray()
 {
-    static int r[10]；//定义静态数组：int r[10]
-    int i;
+    static int r[10] ； //定义静态数组：int r[10]
+        int i;
     int j;
     //   for ( i = 0; i < 10; ++i)
     //   {
@@ -17,7 +17,7 @@ int *getArray()
     //      printf( "r[%d] = %d\n", i, r[i]);
     //   }
 
-    int len = sizeof(r) / sizeof(r[0]);
+    int len = sizeof(r) / sizeof(r[0]); //求数组元素个数
     for (i = 0; i < len; i++)
     {
         scanf("%d", &r[i]);
