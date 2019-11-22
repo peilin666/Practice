@@ -5,6 +5,7 @@
  * Author:songpan
  ***************************************/
 
+//return an array
 int *getArray()
 {
     static int r[10];
