@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*************************************
+ * Description:show how to return an array
+ * Author:songpan
+ ***************************************/
 
 int *getArray()
 {
