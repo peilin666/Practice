@@ -1,2 +1,1 @@
-# Practice
-Exercise code of the 1st week
+this is a note
