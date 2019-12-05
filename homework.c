@@ -8,11 +8,11 @@ int n;
 
 int main()
 {
-    int x, *p, b[1000];
-    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½:\n");
+    int x, *p;    
+    printf("ÇëÊäÈëÔªËØ¸öÊı:\n");
     scanf("%d", &n);
     p = b;
-    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½:\n");
+    printf("ÇëÊäÈëÔªËØ:\n");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", p + i);
@@ -20,15 +20,15 @@ int main()
 
     sort(p, n);
 
-    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½:\n");
+    printf("ÇëÊäÈëÒª¼ì²éµÄÊı:\n");
     scanf("%d", &x);
 
     search(x, b, n);
 
     if (x % 2 == 0)
-        printf("ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÅ¼ï¿½ï¿½\n");
+        printf("ÊÇÅ¼Êı\n");
     else
-        printf("ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½\n");
+        printf("ÊÇÆæÊı\n");
 
     printf("\n");
     system("pause");
@@ -52,7 +52,7 @@ void search(int x, int *p, int n)
             F = M + 1;
         else if (x = *(p + M))
         {
-            printf("ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½!\n%d", x);
+            printf("È·ÈÏ´æÔÚ!\n%d", x);
             T = 1;
             break;
         }
